@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http.Authentication;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -7,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace AuthorizationLab.Controllers
 {
+    [AllowAnonymous]
     public class AccountController : Controller
     {
         public async Task<IActionResult> Login(string returnUrl = null)
