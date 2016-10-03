@@ -20,7 +20,7 @@ namespace AuthorizationLab
             services.AddAuthorization(options =>
             {
                 options.AddPolicy("AdministratorOnly", policy => policy.RequireRole("Administrator"));
-                options.AddPolicy("EmployeeId", policy => policy.RequireClaim("EmployeeId"));
+                options.AddPolicy("EmployeeId", policy => policy.RequireClaim("EmployeeId", "123", "456"));
             });
 
             services.AddMvc(config =>
