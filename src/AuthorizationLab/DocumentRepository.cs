@@ -7,7 +7,7 @@ namespace AuthorizationLab
     {
         static List<Document> _documents = new List<Document>
         {
-            new Document { Id = 1, Author = "barry" },
+            new Document { Id = 1, Author = "matt" },
             new Document { Id = 2, Author = "someoneelse" }
         };
 
